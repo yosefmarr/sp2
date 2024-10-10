@@ -1,0 +1,38 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    // No permitir console.log en el código (como error)
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+
+    // Forzar comillas simples en lugar de dobles
+    "quotes": ["error", "single"],
+
+    // Enforce consistent indentation with 2 spaces
+    "indent": ["error", 2],
+
+    // No permitir variables sin usar
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+
+    // Forzar el uso de comas finales en objetos y arrays
+    "comma-dangle": ["error", "always-multiline"],
+
+    // Prefiere el uso de destructuring para objetos y arrays
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+
+    // Evitar múltiples líneas vacías
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+
+    // Requiere el uso de === y !== en lugar de == y !=
+    "eqeqeq": ["error", "always"]
+  }
+}
