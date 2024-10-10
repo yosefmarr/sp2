@@ -1,0 +1,53 @@
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #242527;
+}
+
+.count {
+  font-size: 10rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 5rem;
+}
+
+.decrementButton {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: #ff4d4d;
+  color: #ffffff;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.decrementButton:hover {
+  background-color: #ff3333;
+  transform: scale(1.1);
+}
+
+.incrementButton {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #282c34;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.incrementButton:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
