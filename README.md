@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SP2 - Next.js
 
-## Getting Started
+Este es un proyecto creado con [Next.js](https://nextjs.org), inicializado con [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+## Comenzando
+
+Para iniciar el servidor de desarrollo, ejecuta:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación en funcionamiento.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts Disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A continuación, se detallan algunos comandos útiles para trabajar con este proyecto:
 
-## Learn More
+### Correr el servidor de desarrollo
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Inicia el servidor de desarrollo y recarga automáticamente los cambios que realices en los archivos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Ejecutar pruebas
 
-## Deploy on Vercel
+```bash
+npm run test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ejecuta las pruebas unitarias e integración utilizando `jest`. Asegúrate de tener tus pruebas configuradas correctamente en la carpeta `__tests__`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Ejecutar el análisis de ESLint
+
+```bash
+npm run lint
+```
+
+Ejecuta el análisis de ESLint para verificar que el código sigue las normas de estilo definidas. También puedes corregir problemas automáticamente usando:
+
+```bash
+npm run lint -- --fix
+```
+
+## Estructura del Proyecto
+
+- `app/` - Contiene las páginas y componentes principales de la aplicación.
+- `components/` - Componentes reutilizables de la aplicación.
+- `utils/` - Funciones de utilidades que se pueden compartir entre diferentes partes del proyecto.
+- `__tests__/` - Carpeta que contiene las pruebas para los componentes y funciones.
+
+## Información Adicional
+
+- Este proyecto utiliza [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para optimizar y cargar fuentes.
+- La configuración de ESLint sigue las recomendaciones de Next.js y de `eslint:recommended`, con algunas reglas adicionales definidas en el archivo `.eslintrc.json`.
