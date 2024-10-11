@@ -10,7 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "again": "^0.0.1",
     "next": "14.2.15",
+    "nvm": "^0.0.4",
     "react": "^18",
     "react-dom": "^18"
   },
