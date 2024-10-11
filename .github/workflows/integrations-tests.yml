@@ -1,0 +1,24 @@
+name: Integration Tests & Linting
+
+on:
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check linting
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
